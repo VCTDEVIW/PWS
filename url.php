@@ -1,4 +1,7 @@
 <?php
+/**
+    This module is currently under construction!
+**/
 namespace P3Q\PWS;
 
 interface ServerDepOps {
