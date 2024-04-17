@@ -1,7 +1,7 @@
 <?php
 ini_set('max_execution_time', 30);
 ini_set('memory_limit', '1G');
-date_default_timezone_set('Asia/Hong_Kong');
+date_default_timezone_set('Asia/XXXXX');
 error_reporting(0);
 
 use Swoole\Runtime;
@@ -121,7 +121,7 @@ function retProcessUptime($conn, $req) {
     global $bootCnt, $uptimeSince;
     ++$bootCnt;
 
-    //$counter = api_once("http://localhost:9000/get/Uptime:Netcool");
+    //$counter = custom_api("");
     $uptime_min = $counter * 5 * 0.01666;
     $uptime_hr = $uptime_min * 0.01666;
     $uptime_day = $uptime_hr * 0.04166;
